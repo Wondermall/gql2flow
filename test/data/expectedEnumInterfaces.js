@@ -25,4 +25,4 @@ module.exports = `  export interface GraphQLResponseRoot {
   /*
     description: null
   */
-  export type IColorEnum = "RED" | "GREEN" | "BLUE";`
+  export type IColorEnum: string = "RED" | "GREEN" | "BLUE";`

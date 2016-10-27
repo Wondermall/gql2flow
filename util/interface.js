@@ -53,7 +53,7 @@ const generateEnumName = name => `${name}Enum`;
 const generateEnumDeclaration = (description, name, enumValues) => `${description && `/*
 description: ${description}
 */`}
-type ${generateEnumName(name)} = ${enumValues.join(' | ')};`;
+type ${generateEnumName(name)}: string = ${enumValues.join(' | ')};`;
 
 /**
   * TODO
